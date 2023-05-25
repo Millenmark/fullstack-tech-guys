@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import App from "./App";
-import { Home, Login, Register, Single, Write } from "./pages";
+import { Home, Login, Profile, Register, Single, Write } from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +19,7 @@ const router = createBrowserRouter(
         <Route index={true} path="/" element={<Home />} />
         <Route path="/post/:id" element={<Single />} />
         <Route path="/write" element={<Write />} />
+        <Route path="/profile" element={<Profile/>} />
       </Route>
     </>
   )

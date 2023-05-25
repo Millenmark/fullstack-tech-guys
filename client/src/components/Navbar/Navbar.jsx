@@ -1,6 +1,7 @@
 import style from "./Navbar.module.css";
 import { Button, Container } from "../../UI";
 import { Link } from "react-router-dom";
+import NameProfile from "../NameProfile/NameProfile";
 
 const Navbar = () => {
   const categories = ["science", "ai", "tech", "computers", "gaming"];
@@ -24,14 +25,7 @@ const Navbar = () => {
       </nav>
 
       <div className={style.profile}>
-        <div>
-          <input type="checkbox" name="profile" id="profile" />
-          <label htmlFor="profile">John</label>
-          <div>
-            <Link to="/profile">Profile</Link>
-            <Link to="/write">Write a Blog</Link>
-          </div>
-        </div>
+        <NameProfile/>
         <Button>Log out</Button>
       </div>
     </Container>

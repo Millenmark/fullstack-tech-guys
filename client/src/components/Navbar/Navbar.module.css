@@ -28,23 +28,3 @@
   gap: 1rem;
 }
 
-.profile > div > input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
-.profile > div > label {
-  cursor: pointer;
-}
-
-.profile > div > div {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-}
-
-.profile > div > input:checked ~ div {
-  display: flex;
-}
-

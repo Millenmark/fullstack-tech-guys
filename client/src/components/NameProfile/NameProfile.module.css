@@ -1,0 +1,19 @@
+.profile > input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.profile > label {
+  cursor: pointer;
+}
+
+.profile > div {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+}
+
+.profile > input:checked ~ div {
+  display: flex;
+}

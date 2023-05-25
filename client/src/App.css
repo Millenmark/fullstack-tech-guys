@@ -1,0 +1,32 @@
+/* GENERAL STYLING */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+main {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}

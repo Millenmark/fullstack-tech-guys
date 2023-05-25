@@ -1,0 +1,38 @@
+.form {
+  width: min(100%, 350px);
+  padding: 1.5rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form label {
+  font-weight: 500;
+  padding-bottom: .5rem;
+}
+
+.form input {
+  padding-left: .5rem;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.form p {
+  font-size: .75em;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.form p > a {
+  text-decoration: underline;
+}

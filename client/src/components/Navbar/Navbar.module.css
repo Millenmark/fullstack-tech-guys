@@ -5,3 +5,46 @@
 
   padding-block: 1rem;
 }
+
+.navHeader h1 {
+  font-weight: 900;
+}
+
+.nav ul{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav ul li h5 {
+  text-transform: uppercase;
+}
+
+.profile {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile > div > input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.profile > div > label {
+  cursor: pointer;
+}
+
+.profile > div > div {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+}
+
+.profile > div > input:checked ~ div {
+  display: flex;
+}
+

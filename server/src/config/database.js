@@ -1,9 +1,12 @@
 import mysql from "mysql2";
+import dotenv from "dotenv"
+
+dotenv.config()
 
 const connectToDatabase = () => {
-  const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
+  const db = mysql.createPool({
+    host: process.env.MYSQL_HOST,
+    user: "admin",
     password: process.env.MYSQL_PASSWORD,
     database: "techguys",
   });
@@ -13,4 +16,6 @@ const connectToDatabase = () => {
   return db;
 };
 
-export default connectToDatabase;
+const db = connectToDatabase()
+
+export default db;

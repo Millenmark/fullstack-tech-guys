@@ -6,7 +6,7 @@ dotenv.config()
 const connectToDatabase = () => {
   const db = mysql.createPool({
     host: process.env.MYSQL_HOST,
-    user: "admin",
+    user: "root",
     password: process.env.MYSQL_PASSWORD,
     database: "techguys",
   });
